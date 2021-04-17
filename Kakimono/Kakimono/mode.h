@@ -13,7 +13,8 @@ class Mode
 		INSERT,	// 挿入モード
 		QUERY,	// 閲覧モード
 		UPDATE,	// 更新モード
-		DELETE	// 削除モード
+		DELETE,	// 削除モード
+		EXIT,	// 終了モード
 	} state = State::COMMAND;
 
 	Database* database;

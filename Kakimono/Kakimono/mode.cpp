@@ -27,6 +27,21 @@ void includeConfigureIntoDatabase(const std::string& confpath, Database* databas
 Mode::Mode()
 {
 	includeConfigureIntoDatabase(confpath, database);	// new Database
+
+	std::cout << std::endl;
+	std::cout << "Enter the command in ()" << std::endl;
+	std::cout << "- (register) a subject" << std::endl;
+	std::cout << "- (insert) an journal" << std::endl;
+	std::cout << "- (query) summaries" << std::endl;
+	std::cout << "- (update) an journal" << std::endl;
+	std::cout << "- (delete) an journal" << std::endl;
+	std::cout << "- (exit)" << std::endl;
+	std::cout << "command ? >>> ";
+
+	while (state != State::EXIT)
+	{
+
+	}
 }
 
 Mode::~Mode()
